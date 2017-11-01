@@ -1,0 +1,107 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 90px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.icon-holder {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.icon-holder span {
+  position: fixed;
+  text-align: center;
+  font-size: .8em;
+
+
+}
+#one span {
+  margin-left: 25px;
+}
+#two span {
+  margin-left: 15px;
+}
+#three span {
+  margin-left: 23px;
+}
+#four span {
+  margin-left: 15px;
+}
+#five span {
+  margin-left: 12px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+.icon {
+	display: inline-block;
+	color: #444444;
+  width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+.icon-holder {
+  text-align: center;
+
+}
+.icon-home {
+  /* Using currentColor above lets
+  us use `color` for changing the color
+  of our icons: */
+  color: white;
+
+  /* The width and height of the SVG
+  was previously set to 1em.
+  This allows us to use `font-size`
+  to change the size of our icon: */
+  font-size: 48px;
+}
+
+@media screen and (max-width: 450px) {
+  .sidenav {
+    z-index: 1000;
+  }
+}

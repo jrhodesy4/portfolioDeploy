@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>About Me</title>
+    {% load staticfiles %}
+    <link rel="shortcut icon" href="{% static 'portfolioApp/images/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'portfolioApp/css/about.css' %}">
+    <script type="text/javascript" src="{% static 'portfolioApp/js/nav-bar.js'%}"></script>
+    <link rel="stylesheet" href="{% static 'portfolioApp/css/nav-bar.css' %}">
+    <script type="text/javascript" src="{% static 'portfolioApp/js/about.js'%}"></script>
+
+
+  </head>
+  <body onload = "startTimer()">
+    {% include "./nav-bar.html" %}
+
+    <div id="main">
+      <div class="header">
+        <span id="list-icon" style="font-size:40px;cursor:pointer">&#9776;</span>
+        <div class="profPic">
+          <a href="/"><img height="70px" src="{% static 'portfolioApp/images/jr_logo.png'%}" alt=""></a>
+        </div>
+        <h1>About Me</h1>
+
+      </div>
+      <div class="body">
+        <div class="about-pic">
+          <img id="img" src="../../static/portfolioApp/images/IMG_2638.jpg" alt="">
+        </div>
+        <div class="about-paragraph">
+          <h2>Good developers know how to make life easier for those around them.</h2>
+          <p>Jordan Rhodes is a full stack web developer based out of Orange County, CA. He graduated with honors from a 4 year university. The following year he completed a 14 week intensive coding program where he accumulated 1000+ hours of coding and built 60+ mini web applications. He is a developer with a familiarity in each layer of web design; a mastery in many front end languages such as HTML5, CSS, Javascript and JQuery, as well as back end stacks like Python and MEAN. Jordan has a genuine interest in all software technology.  He has a passion for creating innovative and engaging web sites, learning more about the craft of web development, and exploring new concepts in web design.</p><br>
+          <p>Jordan enjoys building websites from the back end to the front end. He excels at taking complex problems and coming up with clean, elegant solutions. Jordan has the ability to write clear, consistent and simple to use interfaces. He understands that users “just want things to work”. He can step back and look at a process that needs 8 clicks and 3 steps and get it down to one click. The feeling of creating something from scratch really motivates and drives the passion behind his work. Jordan is very task oriented and skilled at managing a project timeline. He will work tirelessly to create your ideal website in the shortest time possible and have it up and running for all your future customers to see.
+</p><br>
+          <p>Jordan is a lifelong learner and would love to learn about your vision for your business to be able to personalize your website and make it reflect your values, goals and dreams.</p><br>
+          <p>When he's not working on web development, Jordan enjoys traveling abroad, playing basketball, watching a good movie, or playing video games. </p>
+
+        </div>
+
+      </div>
+      <div class="footer">
+        <p>© 2017 Jordan Rhodes</p>
+        <div class="media-links">
+          <a href="https://twitter.com/jo_rho_doe" target="_blank">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+            <path fill="white" d="M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16s16-7.2,16-16C32,7.2,24.8,0,16,0z M22.4,12.7c0,0.1,0,0.3,0,0.4
+            c0,4.3-3.3,9.3-9.3,9.3c-1.9,0-3.6-0.5-5-1.5c0.3,0,0.5,0,0.8,0c1.5,0,3-0.5,4.1-1.4c-1.4,0-2.6-1-3.1-2.3c0.2,0,0.4,0.1,0.6,0.1
+            c0.3,0,0.6,0,0.9-0.1c-1.5-0.3-2.6-1.6-2.6-3.2c0,0,0,0,0,0c0.4,0.2,0.9,0.4,1.5,0.4c-0.9-0.6-1.5-1.6-1.5-2.7
+            c0-0.6,0.2-1.2,0.4-1.7c1.6,2,4,3.3,6.8,3.4c-0.1-0.2-0.1-0.5-0.1-0.7c0-1.8,1.5-3.3,3.3-3.3c0.9,0,1.8,0.4,2.4,1
+            c0.7-0.1,1.5-0.4,2.1-0.8c-0.2,0.8-0.8,1.4-1.4,1.8c0.7-0.1,1.3-0.3,1.9-0.5C23.6,11.7,23,12.3,22.4,12.7z"/>
+          </svg>
+        </a>
+
+        <a href="https://www.linkedin.com/in/jordan-rhodes-6b3003147/" target="_blank">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+          <path fill="white" d="M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16s16-7.2,16-16C32,7.2,24.8,0,16,0z M11.6,24H8.3V13.3h3.3V24z
+          M9.9,11.9C8.9,11.9,8,11,8,9.9C8,8.9,8.9,8,9.9,8c1.1,0,1.9,0.9,1.9,1.9C11.8,11,11,11.9,9.9,11.9z M24,24h-3.3v-5.2
+          c0-1.2,0-2.8-1.7-2.8c-1.7,0-2,1.3-2,2.7V24h-3.3V13.3h3.2v1.5h0c0.4-0.8,1.5-1.7,3.1-1.7c3.4,0,4,2.2,4,5.1V24z"/>
+        </svg>
+      </a>
+
+      <a href="https://github.com/jrhodesy4" target="_blank">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+        <path fill="white" d="M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16s16-7.2,16-16C32,7.2,24.8,0,16,0z M18.3,22.4
+        c0,0-1.1,0.1-2.3,0.1s-2.3-0.1-2.3-0.1C10.9,22.1,8,21,8,16.2c0-1.4,0.5-2.5,1.3-3.4c-0.1-0.3-0.6-1.6,0.1-3.3c0,0,1.1-0.3,3.4,1.3
+        c1-0.3,2.1-0.4,3.1-0.4c1.1,0,2.1,0.1,3.1,0.4c2.4-1.6,3.4-1.3,3.4-1.3c0.7,1.7,0.3,3,0.1,3.3c0.8,0.9,1.3,2,1.3,3.4
+        C24,21,21.1,22.1,18.3,22.4z"/>
+      </svg>
+    </a>
+
+  </div>
+
+</div>
+
+    </div>
+
+  </body>
+</html>
